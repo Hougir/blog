@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>内嵌式 - 微信扫码登录</title>
+    <script type="text/javascript" src="/js/jquery-1.11.1-min.js"></script>
+    <!-- 引入微信扫码登录js文件 -->
+    <script type="text/javascript" src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+</head>
+<body>
+<!--<a href="/api/ucenter/wx/login"><span>微信扫码登陆===============></span></a>-->
+<a id="login_wx" href="javascript:void(0)"><span>微信扫码登陆===============></span></a>
+
+<!-- 放置二维码的div -->
+<div id="login_container"></div>
+</body>
+<script type="text/javascript">
+    $("#login_wx").click(function () {
+        alert("66666")
+        $(document).ready(function () {
+            var obj = new WxLogin({
+                id:"login_container",
+                appid: "wxed9954c01bb89b47",
+                scope: "snsapi_login",  // 固定参数，微信官方提供的解析参数
+                redirect_uri: encodeURIComponent("http://guli.shop/api/ucenter/wx/callback"),
+                /*redirect_uri: "http%3A%2F%2Fguli.shop%2Fapi%2Fucenter%2Fwx%2Fcallback",   // 回调url，就是你扫码后，微信官方返回一些参数（code，state），然后调用你这里指定的方法*/
+                state: "atguigu",   // 该参数可以不写
+                style: "black",  //二维码黑白风格，该参数可以不写
+                href: "data:text/css;base64,LmltcG93ZXJCb3ggLnFyY29kZSB7d2lkdGg6IDIwMHB4O30NCi5pbXBvd2VyQm94IC50aXRsZSB7ZGlzcGxheTogbm9uZTt9DQouaW1wb3dlckJveCAuaW5mbyB7d2lkdGg6IDIwMHB4O30NCi5zdGF0dXNfaWNvbiB7ZGlzcGxheTogbm9uZX0NCi5pbXBvd2VyQm94IC5zdGF0dXMge3RleHQtYWxpZ246IGNlbnRlcjt9"   // 该参数可以不写
+            });
+
+        });
+    });
+</script>
+</html>
