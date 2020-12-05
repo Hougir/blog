@@ -1,7 +1,7 @@
-package com.yrp.controller.admin;
+package com.yellowhao.controller.admin;
 
-import com.yrp.po.User;
-import com.yrp.service.Userservice;
+import com.yellowhao.service.Userservice;
+import com.yellowhao.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,12 +12,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/9/28
- * @Description: com.yrp.controller.admin
- * @version: 1.0
- */
 @Controller
 @RequestMapping("/admin")
 public class LoginController {
@@ -68,5 +62,12 @@ public class LoginController {
         session.removeAttribute("user");
         return "redirect:/admin";
     }
+
+    @GetMapping("/info")
+    public String info() {
+        return "admin/info";
+    }
+
+
 
 }

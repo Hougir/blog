@@ -1,8 +1,8 @@
-package com.yrp.controller.admin;
+package com.yellowhao.controller.admin;
 
 
-import com.yrp.po.Tag;
-import com.yrp.service.TagService;
+import com.yellowhao.service.TagService;
+import com.yellowhao.po.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;

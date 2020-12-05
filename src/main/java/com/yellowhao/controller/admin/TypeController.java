@@ -1,9 +1,8 @@
-package com.yrp.controller.admin;
+package com.yellowhao.controller.admin;
 
-import com.yrp.po.Type;
-import com.yrp.service.TypeService;
+import com.yellowhao.service.TypeService;
+import com.yellowhao.po.Type;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -18,12 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
-/**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/9/29
- * @Description: com.yrp.controller.admin
- * @version: 1.0
- */
+
 @Controller
 @RequestMapping("/admin")
 public class TypeController {

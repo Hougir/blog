@@ -1,11 +1,11 @@
-package com.yrp.controller.admin;
+package com.yellowhao.controller.admin;
 
-import com.yrp.po.Blog;
-import com.yrp.service.BlogService;
-import com.yrp.po.User;
-import com.yrp.service.TagService;
-import com.yrp.service.TypeService;
-import com.yrp.vo.BlogQuery;
+import com.yellowhao.service.BlogService;
+import com.yellowhao.service.TagService;
+import com.yellowhao.service.TypeService;
+import com.yellowhao.vo.BlogQuery;
+import com.yellowhao.po.Blog;
+import com.yellowhao.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -21,12 +21,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 
-/**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/10/3
- * @Description: com.yrp.controller.admin
- * @version: 1.0
- */
+
 @Controller
 @RequestMapping("admin")
 public class BlogController {
