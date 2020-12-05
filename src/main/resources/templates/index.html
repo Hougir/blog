@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <!--移动端预览-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>yellowhao个人博客官方首页</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <!--引入自定义CSS-->
     <link rel="stylesheet" href="../static/css/me.css">
+
 </head>
 <body>
     <!--导航-->
@@ -100,8 +101,8 @@
                                     <span th:text="${type.name}">学习日志</span>
                                     <div class="ui teal basic left pointing label" th:text="${#arrays.length(type.blogs)}">10</div>
                                 </a>
-                                <!--/*-->
-                                <a href="#" class="item">
+
+                              <!--  <a href="#" class="item">
                                     JavaEE学习
                                     <div class="ui teal basic left pointing label">10</div>
                                 </a>
@@ -120,8 +121,8 @@
                                 <a href="#" class="item">
                                     成长
                                     <div class="ui teal basic left pointing label">10</div>
-                                </a>
-                                <!--*/-->
+                                </a>-->
+
                             </div>
                         </div>
                     </div>
@@ -190,10 +191,10 @@
                         <img src="../static/images/WeChat.jpg" th:src="@{/images/WeChat.jpg}" alt="" class="ui rounded image" >
                     </div>
                     <div class="ui basic segment">
-                        <a href="https://github.com/yerenping" class="ui circular icon button m-margin-left-big"><i class="github icon"></i></a>
+                        <a href="https://github.com/yellowhao1204" class="ui circular icon button m-margin-left-big"><i class="github icon"></i></a>
                         <a href="#" class="ui wc circular icon button"><i class="weixin icon"></i></a>
-                        <a href="#" class="ui circular icon button"><i class="qq icon" data-content="1515177029" data-position="bottom center"></i></a>
-                        <a href="https://space.bilibili.com/393270022" class="ui circular icon button"><i class=" icon">B</i></a>
+                        <a href="#" class="ui circular icon button"><i class="qq icon" data-content="974932539" data-position="bottom center"></i></a>
+                        <a href="https://space.bilibili.com/317498467" class="ui circular icon button"><i class=" icon">B</i></a>
                     </div>
                     <div class="ui wc-qr flowing popup transition hidden">
                         <img src="../static/images/WeChat.jpg" th:src="@{/images/WeChat.jpg}" alt="" class="ui rounded image" style="width: 130px">
@@ -204,25 +205,30 @@
                             <div class="ui two column grid">
                                 <div class="column">
                                     <!--微信打赏-->
-                                    <img src="../static/images/pay_wechat.jpg" th:src="@{/images/pay_wechat.jpg}" alt="" class="ui rounded image" style="width: 100px">
+                                    <div style="text-align: center">微信</div>
+                                    <img src="../static/images/pay_wechat.jpg" th:src="@{/images/pay_wechat.jpg}" alt="" class="ui rounded image" style="width: 1280px;height: 150px">
                                 </div>
                                 <div class="right aligned column">
                                     <!--支付宝打赏-->
-                                    <img src="../static/images/pay_baby.jpg" th:src="@{/images/pay_baby.jpg}" alt="" class="ui rounded image" style="width: 100px">
+                                    <div style="text-align: center">支付宝</div>
+                                    <img src="../static/images/pay_baby.jpg" th:src="@{/images/pay_baby.jpg}" alt="" class="ui rounded image" style="width: 132px;height: 155px">
                                 </div>
                             </div>
                     </div>
                     <!--友情链接-->
                     <h4 class="ui horizontal divider header" >友情链接</h4>
                     <div class="ui segments">
+                        <div class="ui segment">
+                            <a href="https://space.bilibili.com/317498467/" target="_blank">博主B站</a>
+                        </div>
                         <div class="ui  segment">
-                            <a href="http://www.zbboke.com">张兵的个人网站</a>
+                            <a href="https://www.zbw99.com/class/basketball/8789.html" target="_blank">白嫖篮球直播</a>
                         </div>
                         <div class="ui segment">
-                            <a href="http://www.loveif.com/">小兔博客</a>
+                            <a href="https://www.imsdn.cn/operating-systems/windows-10/" target="_blank">win10纯净版下载</a>
                         </div>
                         <div class="ui segment">
-                            <a href="https://www.duanliang920.com/">段亮博客</a>
+                            <a href="http://www.pptbz.com/" target="_blank">ppt模板下载</a>
                         </div>
                     </div>
                 </div>

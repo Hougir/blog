@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="admin/_fragments :: head(~{::title})">
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <!--引入自定义CSS-->
     <link rel="stylesheet" href="../../static/css/me.css">
+
+
 </head>
 <body>
     <br/>
@@ -41,6 +43,9 @@
                             <button class="ui fluid large teal submit button">登   录</button>
                         </div>
 
+
+
+
                         <div class="ui error mini message"></div>
                         <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></div>
 
@@ -57,7 +62,7 @@
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
     <!--/*/</th:block>/*/-->
 
-<script>
+<script type="text/javascript">
     /*表单校验*/
     $('.ui.form').form({
         fields : {

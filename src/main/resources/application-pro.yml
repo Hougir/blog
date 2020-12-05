@@ -2,13 +2,26 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://124.70.131.92:3306/blog?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: 123456
+    password: hh920124hh
   jpa:
     hibernate:
-      ddl-auto: none
-    show-sql: true
+      ddl-auto: update
+    show-sql: false
+
+
+  #配置redis连接信息
+
+# redis 主从哨兵配置
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: 124.70.131.92:26380,124.70.131.92:26382,124.70.131.92:26384
+    password: hh974932539hh
+
+
+
 
 #日志打印
 logging:
@@ -18,3 +31,8 @@ logging:
   file: log/-blogpro.log
 server:
   port: 80
+
+
+
+
+

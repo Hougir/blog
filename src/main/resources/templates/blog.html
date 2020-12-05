@@ -23,7 +23,7 @@
     <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary stackable menu" id="nav_menu">
-                <h2 class="ui teal header item">小小叶儿</h2>
+                <h2 class="ui teal header item">yellowhao</h2>
                     <a href="#" class="m-item item m-mobile-hide"><i class="small home icon"></i>首页</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i>分类</a>
                 <a href="#" class="m-item item m-mobile-hide" ><i class="small tags icon"></i>标签</a>
@@ -51,7 +51,7 @@
                 <div class="ui horizontal link list">
                     <div class="item">
                         <img src="https://picsum.photos/id/1011/100/100" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
-                        <div class="content"> <a href="#" class="header" th:text="${blog.user.nickname}">叶仁平</a></div>
+                        <div class="content"> <a href="#" class="header" th:text="${blog.user.nickname}">yellowhao</a></div>
                     </div>
                     <div class="item">
                         <i class="calendar icon"></i>
@@ -304,7 +304,7 @@
                <div class="ui middle aligned grid">
                    <div class="eleven wide column">
                         <ui class="list">
-                            <li>作者:<span th:text="${blog.user.nickname}">叶仁平</span><a href="#" th:href="@{/about}" target="_blank">(联系作者)</a></li>
+                            <li>作者:<span th:text="${blog.user.nickname}">yellowhao</span><a href="#" th:href="@{/about}" target="_blank">(联系作者)</a></li>
 
                             <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2019-10-02 09:08</span></li>
                             <li>版权声明:自由转载-非商用-非衍生-保持署名(创作共享3.0许可证)</li>
@@ -479,7 +479,7 @@
     <div  class="ui wc-qr flowing popup transition hidden " style="width: 140px;border-radius: 5%;">
         <div style="text-align: center;font-size:14px;font-weight:bold; color: orange">扫码阅读哦</div>
         <div id="qrcode" style="margin: 5px auto">
-           <!-- <img src="./static/images/WeChat.jpg" alt="" class="ui rounded image" style="width: 130px">-->
+           <img src="../static/images/public_no_wechat.jpg" th:src="@{/images/public_no_wechat.jpg}" alt="" class="ui rounded image" style="width: 130px">
         </div>
     </div>
 
@@ -503,7 +503,7 @@
         <!--映入目录生成插件 JS-->
         <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
         <!--引入二维码生成插件 JS-->
-        <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+        <!--<script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>-->
         <!--引入waypoints插件滚动条-->
         <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
         <!--*/-->
@@ -550,8 +550,8 @@
 
         /*二维码生成*/
 
-        var serurl = "http://172.20.10.6:8080";
-        var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
+       /* var serurl = "http://172.20.10.6:8080";
+        var url = /!*[[@{/blog/{id}(id=${blog.id})}]]*!/"";
         var qrcode = new QRCode("qrcode", {
             text: serurl+url,
             width: 120,
@@ -559,7 +559,7 @@
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
-        });
+        });*/
 
         /*平滑滚动*/
         $('#toTop').click(function () {
