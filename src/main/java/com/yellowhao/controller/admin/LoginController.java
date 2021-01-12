@@ -2,6 +2,7 @@ package com.yellowhao.controller.admin;
 
 import com.yellowhao.service.Userservice;
 import com.yellowhao.po.User;
+import groovy.util.logging.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
-
+@Slf4j
 @Controller
 @RequestMapping("/admin")
 public class LoginController {

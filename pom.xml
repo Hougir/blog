@@ -108,10 +108,12 @@
 			<version>3.3.0</version>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-		</dependency>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>-->
 
 		<!--<dependency>
 			<groupId>redis.clients</groupId>
@@ -135,6 +137,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+					<addResources>true</addResources>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

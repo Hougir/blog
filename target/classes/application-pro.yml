@@ -2,9 +2,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://124.70.131.92:3306/blog?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://192.168.40.88:3306/blog?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: hh920124hh
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,11 +14,16 @@ spring:
   #配置redis连接信息
 
 # redis 主从哨兵配置
+#  redis:
+#    sentinel:
+#      master: mymaster
+#      nodes: 42.192.236.2:26380,42.192.236.2:26382,42.192.236.2:26384
+    #password: hh974932539hh
   redis:
-    sentinel:
-      master: mymaster
-      nodes: 124.70.131.92:26380,124.70.131.92:26382,124.70.131.92:26384
-    password: hh974932539hh
+    host: 192.168.40.88
+    port: 6379
+    #password: 123456
+
 
 
 
