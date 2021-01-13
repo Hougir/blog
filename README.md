@@ -1,4 +1,4 @@
-# yellowhao的个人博客网站
+# yellowhao的博客网站
 
 ### 项目撰写：yellowhao
 

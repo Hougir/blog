@@ -14,9 +14,25 @@ spring:
 
   #配置redis连接信息
   redis:
-    host: 139.224.29.183
+    host: 192.168.40.88
+    port: 6379
     #password: 123456
-    port: 6380
+    # 数据库索引（默认为0）
+    database: 15
+    # 连接池配置
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+
+  # 缓存开启
+  cache.enable: true
 
 #日志打印
 logging:
