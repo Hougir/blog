@@ -8,14 +8,23 @@
 </head>
 <body>
 <!--<a href="/api/ucenter/wx/login"><span>微信扫码登陆===============></span></a>-->
-<a id="login_wx" href="javascript:void(0)"><span>微信扫码登陆===============></span></a>
+<br/><br/><br/><br/><br/><br/>
+<div id="wx-a" align="center">
+    <h1>目前支持微信扫码登录</h1>
+    <a id="login_wx" href="javascript:void(0)"><span>点我获取二维码</span></a>
+</div>
+<div id="wx-img" style="display: none" align="center">
+    <!-- 放置二维码的div -->
+    <div id="login_container"></div>
+</div>
 
-<!-- 放置二维码的div -->
-<div id="login_container"></div>
+
+
 </body>
 <script type="text/javascript">
     $("#login_wx").click(function () {
-        alert("66666")
+        $("#wx-a").hide();
+        $("#wx-img").show();
         $(document).ready(function () {
             var obj = new WxLogin({
                 id:"login_container",

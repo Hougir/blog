@@ -12,4 +12,7 @@ public interface Userservice {
      */
     User checkUser(String username,String password);
 
+    User getByOpenid(String openid);
+
+    void save(User member);
 }

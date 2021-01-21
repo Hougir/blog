@@ -21,4 +21,17 @@ public class UserServiceImpl implements Userservice {
         //System.out.println(MD5Utils.code(password));
         return user;
     }
+
+    @Override
+    public User getByOpenid(String openid) {
+        return userRepository.findByOpenid(openid);
+    }
+
+    @Override
+    public void save(User member) {
+        if (member != null){
+            userRepository.saveAndFlush(member);
+        }
+
+    }
 }
