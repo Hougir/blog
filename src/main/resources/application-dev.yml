@@ -34,11 +34,17 @@ spring:
   # 缓存开启
   cache.enable: true
 
+wx:
+  open:
+    app_id: wxed9954c01bb89b47  # 微信开放平台 appid
+    app_secret: a7482517235173ddb4083788de60b90e  # 微信开放平台 appsecret
+    redirect_url: http://guli.shop/api/ucenter/wx/callback  # 微信开放平台 重定向url
+
 #日志打印
 logging:
   level:
     root: info
-    com.yrp: debug
+    com.yellowhao: debug
   file: log/blog-dev.log
 server:
   port: 8080

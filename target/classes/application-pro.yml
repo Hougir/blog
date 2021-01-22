@@ -50,8 +50,8 @@ wx:
 #日志打印
 logging:
   level:
-    root: warn
-    com.yrp: info
+    root: info
+    com.yellowhao: debug
   file: log/-blogpro.log
 server:
   port: 8150

@@ -93,7 +93,7 @@ public class IndexController {
 	@GetMapping("/wx_login")
 	public String wxLogin() {
 
-		return "/wx_login";
+		return "wx_login";
 	}
 
 	//2 获取扫描人信息，添加数据

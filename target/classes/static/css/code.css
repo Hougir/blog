@@ -1,0 +1,78 @@
+
+.verify-slide-con{ /* 滑动拼图容器块 */
+  width: 360px;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+}
+.img-con{ /* 图片容器块 */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #eee;
+    position: relative;
+}
+.img-con > .slide-block{ /* 图片区域的滑块 */
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 360px 200px;
+    z-index: 10;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), 0 0 10px 0 rgba(90, 90, 90, 0.4);
+}
+.img-con > .slide-block-mask{ /* 图片区域的空缺区域 */
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.img-con > .img{ /* 图片 */
+    width: 100%;
+    height: 100%;
+}
+.img-con > .loading{ /* 加载中样式 */
+    width: unset;
+    height: unset;
+}
+.slide-con{ /* 滑块容器 */
+    height: 40px;
+    margin: 10px 0;
+    position: relative;
+    border: 1px solid #eee;
+}
+.slide-con > .slide-btn{ /* 滑动按钮 */
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background: #4C98F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon-arrow-right{ /* 右箭头 */
+    font-size: 30px;
+    color: #fff;
+}
+.operate-con{ /* 操作容器块 */
+    border-top: 1px solid #eee;
+    height: 30px;
+    padding: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+.icon-shuaxin1{ /* 刷新按钮 */
+    color: #777;
+    font-size: 20px;
+    cursor: pointer;
+}
